@@ -11,6 +11,7 @@ SOURCES += \
         SpecialString/specialstring.cpp \
         SpecialString/ssappendfunction.cpp \
         SpecialString/ssprependfunction.cpp \
+        SpecialString/sssize.cpp \
         example_constructors_init.cpp \
         exampleappendtosstring.cpp \
         exampleprepend.cpp \
@@ -26,6 +27,7 @@ HEADERS += \
     SpecialString/specialstring.h \
     SpecialString/ssappendfunction.h \
     SpecialString/ssprependfunction.h \
+    SpecialString/sssize.h \
     example_constructors_init.h \
     exampleappendtosstring.h \
     exampleprepend.h

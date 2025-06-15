@@ -12,4 +12,5 @@ ExamplePrepend::ExamplePrepend()
     s << "saludos ";
 
     s.print();
+    cout << s.size() << endl;
 }

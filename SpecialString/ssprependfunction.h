@@ -21,6 +21,9 @@ public:
     void prepend(const char* s) {
         operator= (string(s) + get());
     }
+    void prepend(const char ch){
+        operator= (ch + get());
+    }
 
     // Sobrecarga para QString si está disponible
     #ifdef QSTRING_H
@@ -29,7 +32,7 @@ public:
     }
     #endif
 
-    // Operadores de prepend
+    // Operadores de prepend---------------------------------------------------------
     SSPrependFunction& operator<<(const string &s) {
         prepend(s);
         return *this;
@@ -46,6 +49,28 @@ public:
         return *this;
     }
     #endif
+    // push_front--------------------------------------------------------------------
+    void push_front(const SSPrependFunction &s) {
+        prepend(s);
+    }
+
+    // Sobrecarga para string
+    void push_front(const string &s) {
+        prepend(s);
+    }
+
+    // Sobrecarga para const char*
+    void push_front(const char* s) {
+        prepend(s);
+    }
+
+    // Sobrecarga para QString si está disponible
+    #ifdef QSTRING_H
+    void push_front(const QString &s) {
+        prepend(s);
+    }
+    #endif
+
 };
 
 #endif // SSPREPENDFUNCTION_H

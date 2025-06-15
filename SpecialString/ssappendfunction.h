@@ -102,6 +102,29 @@ public:
         return s_;
     }
 #endif
+    //---------------------------------------PUSH_BACK------------------------------------------
+    void push_back(const string &s)
+    {
+        append(s);
+    }
+    void push_back(const char *s)
+    {
+        append(s);
+    }
+    void push_back(const char ch)
+    {
+        append(ch);
+    }
+    void push_back(const SSAppendFunction &s)
+    {
+        append(s);
+    }
+#ifdef QSTRING_H
+    void push_back(const QString &s)
+    {
+        append(s);
+    }
+#endif
 };
 
 #endif // SSAPPENDFUNCTION_H

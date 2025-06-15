@@ -1,14 +1,14 @@
 #ifndef SPECIALSTRING_H
 #define SPECIALSTRING_H
 
-#include "ssprependfunction.h"
+#include "sssize.h"
 
 
-class SpecialString : public SSPrependFunction
+class SpecialString : public SSSize
 {
 public:
     //CONSTRUCTORES------------
-    SSCONSTRUCTORS(SpecialString, SSPrependFunction)
+    SSCONSTRUCTORS(SpecialString, SSSize)
 
     SpecialString &operator =(const SSAppendFunction &s) {
         SSConstructorsAndOperatorEquals::operator=(s);
