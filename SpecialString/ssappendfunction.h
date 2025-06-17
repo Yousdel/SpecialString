@@ -83,6 +83,12 @@ public:
         return s_;
     }
     const
+    SSAppendFunction operator+(const char s){
+        SSAppendFunction s_(*this);
+        s_.append(s);
+        return s_;
+    }
+    const
     SSAppendFunction operator+(const string &s){
         SSAppendFunction s_(*this);
         s_.append(s);

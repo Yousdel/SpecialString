@@ -43,6 +43,11 @@ public:
         return *this;
     }
 
+    SSPrependFunction& operator<<(const char s) {
+        prepend(s);
+        return *this;
+    }
+
     #ifdef QSTRING_H
     SSPrependFunction& operator<<(const QString &s) {
         prepend(s);
@@ -61,6 +66,10 @@ public:
 
     // Sobrecarga para const char*
     void push_front(const char* s) {
+        prepend(s);
+    }
+
+    void push_front(const char s) {
         prepend(s);
     }
 
