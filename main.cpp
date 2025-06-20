@@ -3,7 +3,8 @@
 
 //#include "example_constructors_init.h"
 //#include "exampleappendtosstring.h"
-#include "exampleprepend.h"
+//#include "exampleprepend.h"
+#include "exampleat.h"
 
 
 int main(int argc, char *argv[])
@@ -12,7 +13,8 @@ int main(int argc, char *argv[])
 
 //    Example_Constructors_Init ex1;
 //    ExampleAppendToSString ex2;
-    ExamplePrepend ex;
+//    ExamplePrepend ex;
+    ExampleAt ex3;
 
     exit(0x0);
 

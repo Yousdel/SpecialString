@@ -79,6 +79,9 @@ public:
     }
     enum PrintMode {PrintWithqDebug, PrintWithCout};
     void print(PrintMode mode = PrintWithCout) const;
+    std::string &get() {
+        return str;
+    }
     const std::string &get() const {
         return str;
     }
