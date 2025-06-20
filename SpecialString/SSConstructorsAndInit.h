@@ -19,6 +19,24 @@ setConsoleOutputForWindows(); \
 std::locale::global(std::locale(""));
 
 
+#define SSCONSTRUCTORS(newClass, baseClass) \
+    newClass() : baseClass() {} \
+    newClass(const string &s) : baseClass(s) {} \
+    newClass(const char *s) : baseClass(s) {} \
+    newClass(char ch) : baseClass(ch) {} \
+    newClass(int size, char ch) : baseClass(size, ch) {} \
+    newClass(const newClass &s) : baseClass(s) {} \
+    newClass(const baseClass &s) : baseClass(s) {} \
+    SSQT_CONSTRUCTOR_HELPER(newClass, baseClass)
+
+#if defined(QSTRING_H)
+#define SSQT_CONSTRUCTOR_HELPER(newClass, baseClass) \
+    newClass(const QString &s) : baseClass(s) {}
+#else
+#define SSQT_CONSTRUCTOR_HELPER
+#endif
+
+
 using namespace std;
 
 /**
@@ -45,6 +63,14 @@ public:
     }
     SSConstructorsAndOperatorEquals(const char *s) : str(s) {
         SYSTEM_LOC
+    }
+    SSConstructorsAndOperatorEquals(char ch) {
+        SYSTEM_LOC
+        str.push_back(ch);
+    }
+    SSConstructorsAndOperatorEquals(int size, char ch) {
+        SYSTEM_LOC
+        str.insert(str.begin(), size, ch);
     }
 #ifdef QSTRING_H
     SSConstructorsAndOperatorEquals(const QString &s) {

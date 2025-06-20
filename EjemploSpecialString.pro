@@ -9,11 +9,12 @@ CONFIG += c++17 cmdline
 SOURCES += \
         SpecialString/SSConstructorsAndInit.cpp \
         SpecialString/specialstring.cpp \
-        SpecialString/ssat.cpp \
         SpecialString/sscount.cpp \
+        SpecialString/ssfill.cpp \
         example_constructors_init.cpp \
         exampleappendtosstring.cpp \
         exampleat.cpp \
+        examplefill.cpp \
         exampleprepend.cpp \
         main.cpp
 
@@ -28,9 +29,11 @@ HEADERS += \
     SpecialString/ssappendfunction.h \
     SpecialString/ssat.h \
     SpecialString/sscount.h \
+    SpecialString/ssfill.h \
     SpecialString/ssprependfunction.h \
     SpecialString/sssize.h \
     example_constructors_init.h \
     exampleappendtosstring.h \
     exampleat.h \
+    examplefill.h \
     exampleprepend.h

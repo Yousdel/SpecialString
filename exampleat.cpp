@@ -5,7 +5,7 @@
 
 ExampleAt::ExampleAt()
 {
-    SpecialString str("gola mundo");
+    SpecialString str("gola mundo mundo mundo");
     str[0]= 'H';
 
     str.print();

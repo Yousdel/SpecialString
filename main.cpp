@@ -1,10 +1,12 @@
 #include <QCoreApplication>
 
 
-//#include "example_constructors_init.h"
-//#include "exampleappendtosstring.h"
-//#include "exampleprepend.h"
+#include "example_constructors_init.h"
+#include "exampleappendtosstring.h"
+#include "exampleprepend.h"
 #include "exampleat.h"
+#include "examplefill.h"
+
 
 
 int main(int argc, char *argv[])
@@ -15,6 +17,7 @@ int main(int argc, char *argv[])
 //    ExampleAppendToSString ex2;
 //    ExamplePrepend ex;
     ExampleAt ex3;
+    ExampleFill ex4;
 
     exit(0x0);
 

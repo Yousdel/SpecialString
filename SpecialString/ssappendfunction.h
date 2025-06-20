@@ -3,21 +3,6 @@
 
 #include "SSConstructorsAndInit.h"
 
-#define SSCONSTRUCTORS(newClass, baseClass) \
-    newClass() : baseClass() {} \
-    newClass(const string &s) : baseClass(s) {} \
-    newClass(const char *s) : baseClass(s) {} \
-    newClass(const newClass &s) : baseClass(s) {} \
-    newClass(const baseClass &s) : baseClass(s) {} \
-    SSQT_CONSTRUCTOR_HELPER(newClass, baseClass)
-
-#if defined(QSTRING_H)
-#define SSQT_CONSTRUCTOR_HELPER(newClass, baseClass) \
-    newClass(const QString &s) : baseClass(s) {}
-#else
-#define SSQT_CONSTRUCTOR_HELPER
-#endif
-
 
 class SSAppendFunction : public SSConstructorsAndOperatorEquals
 {

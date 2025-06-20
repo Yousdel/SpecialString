@@ -17,4 +17,7 @@ Example_Constructors_Init::Example_Constructors_Init()
     s3.print();
     s3 = "hola niños. Cómo están ?\n";
     s3.print(SpecialString::PrintWithqDebug);
+
+    SpecialString s4(4,'f');
+    s4.print();
 }

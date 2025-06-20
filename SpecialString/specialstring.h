@@ -1,14 +1,14 @@
 #ifndef SPECIALSTRING_H
 #define SPECIALSTRING_H
 
-#include "sscount.h"
+#include "ssfill.h"
 
 
-class SpecialString : public SSCount
+class SpecialString : public SSFill
 {
 public:
     //CONSTRUCTORES------------
-    SSCONSTRUCTORS(SpecialString, SSCount)
+    SSCONSTRUCTORS(SpecialString, SSFill)
 
     SpecialString &operator =(const SSAppendFunction &s) {
         SSConstructorsAndOperatorEquals::operator=(s);
