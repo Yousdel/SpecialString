@@ -3,6 +3,7 @@
 
 #include "sscount.h"
 
+/**fill() y resize()*/
 class SSFill : public SSCount
 {
 public:
@@ -10,7 +11,7 @@ public:
 
     /** cada caracter de la cadena sera
      * cambiado a ch. Si size no es -1(defecto),
-     * la cadena cambiara a size antes del
+     * la cadena cambiara a un largo de size antes del
      * cambio de caracteres.
      *
      * ENG: Sets every character in the string to
@@ -18,6 +19,14 @@ public:
      * from -1 (default), the string is
      * resized to size beforehand.*/
     void fill(char ch, int size = -1);
+
+    /** da un nuevo tamaño o largo (newSize) a la cadena.*/
+    void resize(int newSize)
+    {
+        get().resize(newSize);
+    }
+
+    void resize(int newSize, char fillChar);
 };
 
 #endif // SSFILL_H

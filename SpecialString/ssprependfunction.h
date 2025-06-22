@@ -9,26 +9,26 @@ public:
 
     // Prepend con SSPrependFunction
     void prepend(const SSPrependFunction &s) {
-        operator= (s.get() + get());
+        operator= (s.toStdString() + toStdString());
     }
 
     // Sobrecarga para string
     void prepend(const string &s) {
-        operator= (s + get());
+        operator= (s + toStdString());
     }
 
     // Sobrecarga para const char*
     void prepend(const char* s) {
-        operator= (string(s) + get());
+        operator= (string(s) + toStdString());
     }
     void prepend(const char ch){
-        operator= (ch + get());
+        operator= (ch + toStdString());
     }
 
     // Sobrecarga para QString si está disponible
     #ifdef QSTRING_H
     void prepend(const QString &s) {
-        operator= (s.toStdString() + get());
+        operator= (s.toStdString() + toStdString());
     }
     #endif
 

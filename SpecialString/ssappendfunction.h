@@ -14,31 +14,31 @@ public:
      */
     void append(const string &s)
     {
-        string s1 = get();    //a s1 agregarle s
+        string s1 = toStdString();    //a s1 agregarle s
         s1.append(s);
         operator=(s1);
     }
     void append(const char *s)
     {
-        string s1 = get();
+        string s1 = toStdString();
         s1.append(s);
         operator=(s1);
     }
     void append(const char ch){
-        string s1 = get();
+        string s1 = toStdString();
         s1.push_back(ch);
         operator=(s1);
     }
     void append(const SSAppendFunction &s)
     {
-        string s1 = get(), s2 = s.get();    //a s1 agregarle s
+        string s1 = toStdString(), s2 = s.toStdString();    //a s1 agregarle s
         s1.append(s2);
         operator=(s1);
     }
 #ifdef QSTRING_H
     void append(const QString &s)
     {
-        string s1 = get();
+        string s1 = toStdString();
         s1.append(s.toStdString());
         operator=(s1);
     }

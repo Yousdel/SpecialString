@@ -6,7 +6,7 @@
 #include "exampleprepend.h"
 #include "exampleat.h"
 #include "examplefill.h"
-
+#include "exampleright.h"
 
 
 int main(int argc, char *argv[])
@@ -16,8 +16,9 @@ int main(int argc, char *argv[])
 //    Example_Constructors_Init ex1;
 //    ExampleAppendToSString ex2;
 //    ExamplePrepend ex;
-    ExampleAt ex3;
-    ExampleFill ex4;
+//    ExampleAt ex3;
+//    ExampleFill ex4;
+    ExampleRight ex5;
 
     exit(0x0);
 

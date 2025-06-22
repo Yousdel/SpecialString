@@ -11,3 +11,14 @@ void SSFill::fill(char ch, int size){
         operator=(str);
     }
 }
+
+void SSFill::resize(int newSize, char fillChar){
+    SSFill str(toStdString());
+    str.resize(newSize);
+    for (int i = lenght(); i < str.lenght(); ++i) {
+        str[i] = fillChar;
+    }
+    operator=(str);
+}
+
+

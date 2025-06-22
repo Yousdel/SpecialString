@@ -8,7 +8,7 @@ class SSSize : public SSPrependFunction
 {
 public:
     SSCONSTRUCTORS(SSSize, SSPrependFunction)
-    int size() const { return get().size(); }
+    int size() const { return toStdString().size(); }
     int lenght() const { return size(); }
     void clear() { operator=(""); }
 };

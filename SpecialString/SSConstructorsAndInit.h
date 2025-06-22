@@ -80,7 +80,7 @@ public:
 #endif
     SSConstructorsAndOperatorEquals(const SSConstructorsAndOperatorEquals &s) {
         SYSTEM_LOC
-        str = s.get();
+        str = s.toStdString();
     }
 
     //------------------------------------------OPERADOR = -------------------------------------------
@@ -108,8 +108,12 @@ public:
     std::string &get() {
         return str;
     }
-    const std::string &get() const {
+    const std::string &toStdString() const {
         return str;
+    }
+
+    const char *c_str() const {
+        return str.c_str();
     }
 };
 

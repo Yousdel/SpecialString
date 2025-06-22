@@ -8,7 +8,7 @@
 
 void SSConstructorsAndOperatorEquals::print(PrintMode mode) const{
     if (mode == PrintWithCout){
-        cout << str << endl;
+        cout << "\"" << str << "\"" << endl;
     }
 #ifdef QDEBUG_H
     else if (mode == PrintWithqDebug) {

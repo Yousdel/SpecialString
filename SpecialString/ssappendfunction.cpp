@@ -1,6 +1,0 @@
-#include "ssappendfunction.h"
-
-
-
-
-

@@ -10,7 +10,7 @@ public:
 
     /**Para obtener el caracter en el indice index*/
     char at(int index) const {
-        return get().at(index);
+        return toStdString().at(index);
     }
 
     /**Para cambiar el caracter en el indice index*/

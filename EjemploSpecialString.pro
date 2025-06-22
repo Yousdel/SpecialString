@@ -11,11 +11,13 @@ SOURCES += \
         SpecialString/specialstring.cpp \
         SpecialString/sscount.cpp \
         SpecialString/ssfill.cpp \
+        SpecialString/ssright.cpp \
         example_constructors_init.cpp \
         exampleappendtosstring.cpp \
         exampleat.cpp \
         examplefill.cpp \
         exampleprepend.cpp \
+        exampleright.cpp \
         main.cpp
 
 # Default rules for deployment.
@@ -31,9 +33,11 @@ HEADERS += \
     SpecialString/sscount.h \
     SpecialString/ssfill.h \
     SpecialString/ssprependfunction.h \
+    SpecialString/ssright.h \
     SpecialString/sssize.h \
     example_constructors_init.h \
     exampleappendtosstring.h \
     exampleat.h \
     examplefill.h \
-    exampleprepend.h
+    exampleprepend.h \
+    exampleright.h

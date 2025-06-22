@@ -14,4 +14,13 @@ ExampleFill::ExampleFill()
 
     s.fill('k', 23);
     s.print();
+
+    s.resize(5);
+    s.print();
+
+    s.resize(50);
+    s.print();
+
+    s.resize(60, '-');
+    s.print();
 }
