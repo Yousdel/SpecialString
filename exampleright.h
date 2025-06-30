@@ -2,10 +2,10 @@
 #define EXAMPLERIGHT_H
 
 
-class ExampleRight
+class ExampleRightAndLeft
 {
 public:
-    ExampleRight();
+    ExampleRightAndLeft();
 };
 
 #endif // EXAMPLERIGHT_H

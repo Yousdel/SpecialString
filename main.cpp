@@ -18,7 +18,7 @@ int main(int argc, char *argv[])
 //    ExamplePrepend ex;
 //    ExampleAt ex3;
 //    ExampleFill ex4;
-    ExampleRight ex5;
+    ExampleRightAndLeft ex5;
 
     exit(0x0);
 

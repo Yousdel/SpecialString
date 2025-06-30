@@ -11,6 +11,7 @@ SOURCES += \
         SpecialString/specialstring.cpp \
         SpecialString/sscount.cpp \
         SpecialString/ssfill.cpp \
+        SpecialString/ssleft.cpp \
         SpecialString/ssright.cpp \
         example_constructors_init.cpp \
         exampleappendtosstring.cpp \
@@ -32,6 +33,7 @@ HEADERS += \
     SpecialString/ssat.h \
     SpecialString/sscount.h \
     SpecialString/ssfill.h \
+    SpecialString/ssleft.h \
     SpecialString/ssprependfunction.h \
     SpecialString/ssright.h \
     SpecialString/sssize.h \

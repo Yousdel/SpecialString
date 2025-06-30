@@ -7,7 +7,7 @@ void SSFill::fill(char ch, int size){
         SSFill str(size, ch);
         operator=(str);
     } else {
-        SSFill str(lenght(), ch);
+        SSFill str(length(), ch);
         operator=(str);
     }
 }
@@ -15,7 +15,7 @@ void SSFill::fill(char ch, int size){
 void SSFill::resize(int newSize, char fillChar){
     SSFill str(toStdString());
     str.resize(newSize);
-    for (int i = lenght(); i < str.lenght(); ++i) {
+    for (int i = length(); i < str.length(); ++i) {
         str[i] = fillChar;
     }
     operator=(str);

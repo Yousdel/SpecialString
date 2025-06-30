@@ -2,10 +2,16 @@
 
 #include "SpecialString/specialstring.h"
 
-ExampleRight::ExampleRight()
+ExampleRightAndLeft::ExampleRightAndLeft()
 {
     SpecialString s1("Guardacadenas");
 
-    s1.right(7); // s1 == "cadenas"
-    s1.print();
+    s1.right(7). // imprime "cadenas"
+            print();
+
+    s1.right(-1).print(); //imprime la cadena completa
+    s1.right(80).print(); //imprime la cadena completa
+
+    SpecialString s2(s1.left(6));
+    s2.print();
 }
